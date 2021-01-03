@@ -21,39 +21,39 @@ export const Header = () => {
   return (
     <div style={styles.header}>
       <Link href="/" passHref>
-        <span style={router.pathname === "/" ? styles.active : styles.link}>
+        <a style={router.pathname === "/" ? styles.active : styles.link}>
           Home
-        </span>
+        </a>
       </Link>
       <Link href="/blog" passHref>
-        <span style={router.pathname === "/blog" ? styles.active : styles.link}>
+        <a style={router.pathname === "/blog" ? styles.active : styles.link}>
           Blog
-        </span>
+        </a>
       </Link>
       <Link href="/profile" passHref>
-        <span
+        <a
           style={router.pathname === "/profile" ? styles.active : styles.link}
         >
           Profile
-        </span>
+        </a>
       </Link>
       <Link href="/blog/items" passHref>
-        <span
+        <a
           style={
             router.pathname === "/blog/items" ? styles.active : styles.link
           }
         >
           Items
-        </span>
+        </a>
       </Link>
       <Link href="/blog/categories" passHref>
-        <span
+        <a
           style={
             router.pathname === "/blog/categories" ? styles.active : styles.link
           }
         >
           Categories
-        </span>
+        </a>
       </Link>
     </div>
   );
